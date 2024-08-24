@@ -16,7 +16,8 @@ const Banner = ({banner_img}) => {
             <h3 style={{color:"brown"}}>Easily create the perfect resume for any job using our best-in-class resume builder platform.</h3>
             <CustomButton text="CREATE NOW"/>
             <h3>25% more offers</h3>
-            <h5>Subscribed and hired by:*</h5>
+            <h5 style={{marginBottom:"10px"}}>Subscribed and hired by:*</h5>
+            <img src="https://www.resumebuilder.com/wp-content/uploads/2023/12/black-logo-1.svg" alt="Floating Logo" class="floating-image"></img>
         </div>    
     </div>
     <div className='container a'>

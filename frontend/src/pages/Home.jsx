@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className='b1'>
       <Navbar/>
-      <Banner banner_img="https://www.resume.com/static/9fbc5af46909a5571f95e8bdbba84a30/4588f/resume-group.webp"/>
+      <Banner banner_img="https://www.livecareer.com/lcapp/uploads/2024/08/easy-to-use.png"/>
       <CardCarousel/>
       <WhyBuild/>
     </div>

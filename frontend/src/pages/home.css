@@ -4,4 +4,6 @@
     background: linear-gradient(to right, #ffd6d6,rgb(255, 225, 223),rgb(244, 200, 149), #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100rem;
     height: 100vh;
+    font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './cardCarousel.css'
 import MyCard from './MyCard';
 
 const chunkArray = (arr, size) => {
@@ -12,14 +12,14 @@ const chunkArray = (arr, size) => {
 
 export const CardCarousel = () => {
     const cards = [
-        { title: 'Card 1', text: 'This is card 1', image: 'https://images.unsplash.com/photo-1724086575243-6796fc662673?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8' },
-        { title: 'Card 2', text: 'This is card 2', image: 'https://images.unsplash.com/photo-1724086575243-6796fc662673?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8' },
-        { title: 'Card 3', text: 'This is card 3', image: 'https://images.unsplash.com/photo-1724086575243-6796fc662673?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8' },
-        { title: 'Card 4', text: 'This is card 4', image: 'https://images.unsplash.com/photo-1724086575243-6796fc662673?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8' },
-        { title: 'Card 5', text: 'This is card 5', image: 'https://images.unsplash.com/photo-1724086575243-6796fc662673?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8' },
-        { title: 'Card 6', text: 'This is card 6', image: 'https://images.unsplash.com/photo-1724086575243-6796fc662673?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8' },
-        { title: 'Card 7', text: 'This is card 6', image: 'https://images.unsplash.com/photo-1724086575243-6796fc662673?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8' },
-        { title: 'Card 8', text: 'This is card 6', image: 'https://images.unsplash.com/photo-1724086575243-6796fc662673?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8' }
+        { title: 'Card 1', text: 'This is card 1', image: 'https://www.livecareer.com/lcapp/uploads/2023/08/sales-associate-example-resume.svg' },
+        { title: 'Card 2', text: 'This is card 2', image: 'https://www.livecareer.com/lcapp/uploads/2023/08/cashier-example-resume.svg' },
+        { title: 'Card 3', text: 'This is card 3', image: 'https://www.livecareer.com/lcapp/uploads/2023/08/intern-resume-example.svg' },
+        { title: 'Card 4', text: 'This is card 4', image: 'https://www.livecareer.com/lcapp/uploads/2023/08/restaurant-server-example-resume.svg' },
+        { title: 'Card 5', text: 'This is card 5', image: 'https://www.livecareer.com/lcapp/uploads/2023/08/teacher-example-resume.svg' },
+        { title: 'Card 6', text: 'This is card 6', image: 'https://www.livecareer.com/lcapp/uploads/2023/08/manager-example-resume.svg' },
+        { title: 'Card 7', text: 'This is card 6', image: 'https://www.livecareer.com/lcapp/uploads/2022/12/nursing-assistant-example-resume.svg' },
+        { title: 'Card 8', text: 'This is card 6', image: 'https://www.livecareer.com/lcapp/uploads/2022/12/student-example-resume.svg' }
       ];
 
     const cardChunks = chunkArray(cards, 4); // Create chunks of 4 cards

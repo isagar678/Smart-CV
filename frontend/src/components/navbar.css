@@ -1,7 +1,7 @@
 .navbar{
-    position: fixed;
+    position: relative;
     top: 0;
-    
+    background-color: red;
     width: 100%;
     z-index: 1000;
     
@@ -9,4 +9,6 @@
 .nav-link:hover{
     color: brown;
 }
-
+/* .navbar > .container{
+    background-color: red;
+} */
