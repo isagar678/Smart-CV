@@ -1,0 +1,26 @@
+
+.banner-image>img{
+    /* opacity: 0.5; */
+    top: 50px;
+    position:relative;
+    max-width: 70vh;
+    max-height: 70vh;
+}
+.flexer{
+    display: flex;
+    width: 100%;
+
+}
+.banner-text > h3{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.a{
+    margin: 40px;
+    color: black;
+    font-size:20px;
+    font-family: Lexend, sans-serif;
+}
+
