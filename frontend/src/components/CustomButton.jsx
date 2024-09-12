@@ -1,10 +1,10 @@
 import React from 'react'
 import './button.css'
 
-const CustomButton = ({text,size,handliClick}) => {
+const CustomButton = ({text,size,handleClick}) => {
     
   return (
-    <button onClick={handliClick} className='btn btn-lg'><b style={{color:"white"}}>{text}</b></button>
+    <button onClick={handleClick} className='btn btn-lg'><b style={{color:"white"}}>{text}</b></button>
   )
 }
 
