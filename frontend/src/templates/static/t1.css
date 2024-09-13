@@ -1,0 +1,66 @@
+
+    .resume-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .header {
+        text-align: center;
+        background-color: #3b4c59;
+        padding: 20px;
+        color: white;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .header p {
+        margin: 5px 0;
+        font-size: 1em;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+        color: #333;
+        border-bottom: 2px solid #3b4c59;
+        padding-bottom: 5px;
+    }
+
+    .section ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+
+    .section ul li {
+        margin-bottom: 5px;
+    }
+
+    .work-history .job {
+        margin-bottom: 15px;
+    }
+
+    .work-history .job h3 {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+.work-history .job p {
+        margin: 2px 0;
+        font-size: 0.95em;
+        color: #666;
+}
+
