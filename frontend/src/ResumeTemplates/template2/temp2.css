@@ -1,0 +1,92 @@
+/* Container for the resume */
+.resume-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Left column styles */
+  .left-column {
+    background-color: #f5c5c1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Right column styles */
+  .right-column {
+    background-color: #f8f9fa;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Name styling */
+  .resume-name {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+    color: #343a40;
+    text-transform: uppercase;
+  }
+  
+  /* Contact details */
+  .resume-contact {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #343a40;
+  }
+  
+  /* Section titles */
+  .section-title {
+    font-size: 1.3rem;
+    color: #343a40;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  /* Work history and job details */
+  .job-section {
+    margin-bottom: 20px;
+  }
+  
+  .job-section h5 {
+    font-size: 1.25rem;
+    color: #495057;
+  }
+  
+  .job-date {
+    font-style: italic;
+    color: #6c757d;
+  }
+  
+  /* Skills list */
+  .skills-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .skills-list li {
+    margin-bottom: 8px;
+  }
+  
+  /* Customizing bullet points */
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #343a40;
+  }
+  
+  /* Adding hover effect to make editable content more obvious */
+  [contentEditable]:hover {
+    outline: 2px dashed #28a745;
+    background-color: #f1f1f1;
+  }
+  

@@ -1,0 +1,49 @@
+.container.resume-kendra {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #f8f9fa;
+    color: #007bff;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  .section {
+    margin-top: 30px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li::before {
+    content: '•';
+    color: #007bff;
+    padding-right: 8px;
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .job ul {
+    margin-top: 10px;
+  }
+  

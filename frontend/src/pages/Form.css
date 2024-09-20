@@ -3,65 +3,71 @@
   display: flex;
   
 }
+.remove{
+  position: absolute;
+  left: 545px;
+  border-radius: 0%;
+  
+}
 
 
 form {
     width: 100vh;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #000000d8;
-    border-radius: 8px;
+  padding: 20px;
+  background-color: #000000d8;
+  border-radius: 8px;
     
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Styling for form labels */
-  form label {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 8px;
-    display: block;
-    color: white;
-  }
-  
-  /* Input and textarea styling */
-  form input[type="text"], form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    transition: border-color 0.3s ease;
-  }
-  
-  /* Hover and focus effects for inputs */
-  form input[type="text"]:focus, form textarea:focus, form input[type="email"]:focus {
-   
-    outline: 4px solid #a64dc4; /* Adjust the thickness (3px) and color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
-  /* Submit button styling */
-  form input[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    border: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Submit button hover effect */
-  form input[type="submit"]:hover {
-    background: linear-gradient(135deg, #ff758c, #ff5e95);
-  }
-  
-  /* Textarea resizing for larger text fields */
-  form textarea {
-    height: 100px;
-    resize: vertical;
-  }
-  
+
+/* Styling for form labels */
+form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: white;
+}
+
+/* Input and textarea styling */
+form input[type="text"], form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+/* Hover and focus effects for inputs */
+form input[type="text"]:focus, form textarea:focus, form input[type="email"]:focus {
+   
+  outline: 4px solid #a64dc4; /* Adjust the thickness (3px) and color */
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+form input[type="submit"]:hover {
+  background: linear-gradient(135deg, #ff758c, #ff5e95);
+}
+
+/* Textarea resizing for larger text fields */
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+

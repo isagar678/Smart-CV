@@ -2,7 +2,7 @@ import React from 'react'
 import './whyBuild.css'
 const WhyBuild = () => {
   return (
-    <>
+    
     <div className="great-grand">
     <div className='grand' >
 
@@ -74,7 +74,7 @@ const WhyBuild = () => {
     </div>
     
     </div>
-    </>
+    
   )
 }
 

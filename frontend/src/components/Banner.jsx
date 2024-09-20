@@ -7,7 +7,7 @@ const Banner = ({banner_img}) => {
   }
   return (
     <>
-    <div className="whole container" >
+    <div className="whole " >
 
     
     <div className='flexer'>

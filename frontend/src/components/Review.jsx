@@ -1,11 +1,7 @@
 import React, { useContext,useEffect } from 'react'
 
-import '../templates/static/t1.css'
+// import '../templates/static/t1.css'
 const Review = ({formData}) => {
-    
-    useEffect(() => {
-        console.log(formData);
-      }, [formData]); 
   return (
     <div>
       
@@ -25,8 +21,9 @@ const Review = ({formData}) => {
     <div className="section skills">
         <h2>Skills</h2>
         <ul>
-            <li>{formData.skills}</li>
-            
+            {formData.skills.map((skill)=>{
+                return <li>{skill}</li>
+            })}          
         </ul>
     </div>
 
@@ -40,7 +37,7 @@ const Review = ({formData}) => {
     </div>
 
     <div className="section work-history">
-        <h2>Work History</h2>
+        <h2 contentEditable>Work History</h2>
         <div className="job">
             <h3>Retail Sales Associate</h3>
             <p>TechStyle Fashion Group, Sandusky, OH</p>
@@ -63,15 +60,16 @@ const Review = ({formData}) => {
         <h2>Education</h2>
         <ul>
         <li>{formData.education}</li>
-        <li>{formData.education}</li>
+        
             </ul>
     </div>
 
     <div className="section certificates">
         <h2>Certificates</h2>
         <ul>
-            <li>{formData.certificates}</li>
-            <li>Retail Sales Expert Certification</li>
+            {formData.certificates.map((certificate)=>{
+                return <li>{certificate}</li>
+            })}
         </ul>
     </div>
 
