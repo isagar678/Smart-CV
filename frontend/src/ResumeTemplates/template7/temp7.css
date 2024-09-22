@@ -1,0 +1,83 @@
+/* temp6.css */
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Arial', sans-serif;
+    margin: 40px auto;
+    width: 70%;
+    border: 1px solid #e5e5e5;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Left Sidebar for Personal Info */
+  .left-sidebar {
+    background-color: #f36f56;
+    width: 30%;
+    color: white;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .left-sidebar h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  .left-sidebar p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .left-sidebar .education, .left-sidebar .certifications {
+    margin-top: 30px;
+  }
+  
+  .left-sidebar h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Main Content Area */
+  .main-content {
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .main-content h2 {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 2px solid #f36f56;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .main-content p, .main-content li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .main-content .job, .main-content .project {
+    margin-bottom: 20px;
+  }
+  
+  .main-content .job p, .main-content .project p {
+    margin: 5px 0;
+  }
+  
+  .main-content .job ul, .main-content .project ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Skills Section */
+ 
+  
+  /* General styling for sections */
+  .section {
+    margin-bottom: 30px;
+  }
+  

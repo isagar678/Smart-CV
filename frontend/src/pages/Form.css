@@ -3,11 +3,31 @@
   display: flex;
   
 }
-.remove{
-  position: absolute;
-  left: 545px;
-  border-radius: 0%;
+
+.input-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.input-container input {
+  flex: 1; /* Make input take available space */
+  padding: 8px; /* Add some padding */
+  border: 1px solid #ccc; /* Input border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.input-container .remove {
+  margin-left: 5px; /* Space between input and button */
+  padding: 8px 12px; /* Padding for the button */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007bff; /* Button color */
   
+  cursor: pointer; /* Pointer on hover */
+}
+
+.input-container .remove:hover {
+  background-color: #0056b3; /* Darker on hover */
 }
 
 

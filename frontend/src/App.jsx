@@ -1,7 +1,7 @@
 import { BrowserRouter,Route,Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Form from "./pages/Form"
-import LiveResume from "./components/LiveResume"
+// import LiveResume from "./components/LiveResume"
 function App() {
 
   return (
@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/form" element={<Form/>}/>
-      <Route path='/resume/:rid' element={<LiveResume/>}/>
+      <Route path="/form/:rid" element={<Form/>}/>
+      {/* <Route path='/resume/:rid' element={<LiveResume/>}/> */}
     </Routes>
     </BrowserRouter>
       

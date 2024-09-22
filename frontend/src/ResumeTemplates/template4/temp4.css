@@ -1,46 +1,45 @@
 .container.resume {
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  .header {
-    background-color: #2f3e46;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .contact, .skills, .certifications, .work-history, .education {
-    margin-top: 30px;
-  }
-  
-  h1 {
-    font-size: 36px;
-    letter-spacing: 2px;
-  }
-  
-  h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #2f3e46;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  ul li::before {
-    content: '•';
-    color: #2f3e46;
-    padding-right: 8px;
-  }
-  
-  .job {
-    margin-bottom: 20px;
-  }
-  
-  .job ul {
-    margin-top: 10px;
-  }
-  
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  background-color: #2f3e46;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.resume .contact, .resume .skills, .resume .certifications, .resume .work-history, .resume .education {
+  margin-top: 30px;
+}
+
+.resume h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.resume h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2f3e46;
+}
+
+.resume ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resume ul li::before {
+  content: '•';
+  color: #2f3e46;
+  padding-right: 8px;
+}
+
+.resume .job {
+  margin-bottom: 20px;
+}
+
+.resume .job ul {
+  margin-top: 10px;
+}

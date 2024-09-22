@@ -1,50 +1,49 @@
-.container.resume-gordon {
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  .header {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .name {
-    font-size: 36px;
-  }
-  
-  .highlight {
-    color: #28a745;
-  }
-  
-  .section {
-    margin-top: 30px;
-  }
-  
-  .section-title {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #28a745;
-    border-bottom: 2px solid #28a745;
-    padding-bottom: 5px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  ul li::before {
-    content: '•';
-    color: #28a745;
-    padding-right: 8px;
-  }
-  
-  .job {
-    margin-bottom: 20px;
-  }
-  
-  .job ul {
-    margin-top: 10px;
-  }
-  
+.resume-gordon.container {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.resume-gordon__header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.resume-gordon__name {
+  font-size: 36px;
+}
+
+.resume-gordon__highlight {
+  color: #28a745;
+}
+
+.resume-gordon__section {
+  margin-top: 30px;
+}
+
+.resume-gordon__section-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #28a745;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 5px;
+}
+
+.resume-gordon__content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resume-gordon__content ul li::before {
+  content: '•';
+  color: #28a745;
+  padding-right: 8px;
+}
+
+.resume-gordon__job {
+  margin-bottom: 20px;
+}
+
+.resume-gordon__job ul {
+  margin-top: 10px;
+}

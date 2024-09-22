@@ -6,14 +6,14 @@ import './card.css'
 const MyCard = ({ title, image,rid , key}) => {
   const navigate=useNavigate();
   const handleClick = () => {
-    navigate(`/resume/${rid}`);
+    navigate(`/form/${rid}`);
   };
   return (
     <div className="card custom-card" >
       <img src={image} className="card-img-top" alt={title} />
       <div className="card-body">
         
-        <CustomButton handleClick={handleClick} key={key} rid={rid} text="USE"/>
+        <CustomButton style={{ position: 'relative', }} handleClick={handleClick} key={key} rid={rid} text="USE"/>
       </div>
     </div>
   );

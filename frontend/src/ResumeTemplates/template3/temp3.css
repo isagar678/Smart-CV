@@ -1,49 +1,76 @@
-.resume-container {
-    background-color: #f8f9fa;
-    padding: 30px;
-    border-radius: 8px;
+.resume-container3 {
+  background: linear-gradient(135deg, #fff9e5, #ffecb3);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container3 > .row > .col-12 > h1 {
+  color: #f57c20; /* Rich orange for name */
+}
+
+.resume-container3 > .row > .col-12 > p {
+  margin: 10px 0;
+}
+
+.resume-container3 .section-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ff9800; /* Bright orange for section titles */
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 5px;
+}
+
+.resume-container3 .job-section {
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  border-left: 5px solid #ffb300; /* Deep yellow accent for job sections */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.resume-container3 .job-date {
+  font-style: italic;
+  color: #8d6e63; /* Muted brown for job dates */
+}
+
+.resume-container3 ul {
+  padding-left: 20px;
+}
+
+.resume-container3 .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.resume-container3 .skills-list li {
+  margin-right: 20px;
+  width: 50%;
+  padding: 8px;
+  background-color: #ffe082; /* Light yellow for skills */
+  border-radius: 4px;
+  color: #e65100; /* Darker orange for text */
+}
+
+.resume-container3 h5 {
+  margin-bottom: 5px;
+  color: #6d4c41; /* Muted brown for job titles */
+}
+
+.resume-container3 ul li {
+  margin-bottom: 5px;
+  color: #333; /* Dark color for list items */
+}
+
+.resume-container3 .row {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .resume-container3 .skills-list li {
+    width: 100%; /* Full width on small screens */
   }
-  
-  .section-title {
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .job-section {
-    margin-bottom: 25px;
-  }
-  
-  .job-date {
-    font-style: italic;
-    color: #6c757d;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-  }
-  
-  .skills-list li {
-    margin-right: 20px;
-    width: 50%;
-  }
-  
-  h1, h3, p, ul, li {
-    outline: none;
-  }
-  
-  h5 {
-    margin-bottom: 5px;
-  }
-  
-  ul li {
-    margin-bottom: 5px;
-  }
-  
+}

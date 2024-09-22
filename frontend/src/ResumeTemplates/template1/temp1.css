@@ -1,70 +1,62 @@
-/* Resume container styles */
-.resume-container {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Name and contact details */
-  .resume-name {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 2.5rem;
-    color: #343a40;
-    margin-bottom: 0;
-  }
-  
-  .resume-contact {
-    font-size: 1rem;
-    color: #6c757d;
-  }
-  
-  /* Section titles */
-  .section-title {
-    font-size: 1.5rem;
-    color: #28a745;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  /* Work history */
-  .job-section {
-    margin-bottom: 20px;
-  }
-  
-  .job-section h5 {
-    font-size: 1.25rem;
-    color: #495057;
-  }
-  
-  .job-date {
-    font-style: italic;
-    color: #6c757d;
-  }
-  
-  /* Skills list */
-  .skills-list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .skills-list li {
-    margin-bottom: 8px;
-  }
-  
-  /* Customizing bullet points */
-  ul {
-    padding-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #343a40;
-  }
-  
-  /* Adding hover effect to make editable content more obvious */
-  [contentEditable]:hover {
-    outline: 2px dashed #28a745;
-    background-color: #f1f1f1;
-  }
-  
+.resume-container1 {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Name and contact details */
+.resume-container1 .resume-name {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 0;
+}
+
+.resume-container1 .resume-contact {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Section titles */
+.resume-container1 .section-title {
+  font-size: 1.5rem;
+  color: #28a745;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Work history */
+.resume-container1 .job-section {
+  margin-bottom: 20px;
+}
+
+.resume-container1 .job-section h5 {
+  font-size: 1.25rem;
+  color: #495057;
+}
+
+.resume-container1 .job-date {
+  font-style: italic;
+  color: #6c757d;
+}
+
+/* Skills list */
+.resume-container1 .skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resume-container1 .skills-list li {
+  margin-bottom: 8px;
+}
+
+/* Customizing bullet points */
+.resume-container1 ul {
+  padding-left: 20px;
+}
+
+.resume-container1 ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #343a40;
+}

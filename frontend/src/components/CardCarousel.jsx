@@ -8,6 +8,8 @@ import temp3Image from '../ResumeTemplates/templateImages/temp3.png';
 import temp4Image from '../ResumeTemplates/templateImages/temp4.png';
 import temp5Image from '../ResumeTemplates/templateImages/temp5.png';
 import temp6Image from '../ResumeTemplates/templateImages/temp6.png';
+import temp7Image from '../ResumeTemplates/templateImages/temp7.png';
+import temp8Image from '../ResumeTemplates/templateImages/temp8.png';
 
 const cards = [
   { image: temp1Image},
@@ -16,6 +18,8 @@ const cards = [
   { image: temp4Image},
   { image: temp5Image},
   { image: temp6Image},
+  { image: temp7Image},
+  { image: temp8Image},
 ];
 
 const chunkArray = (arr, size) => {
