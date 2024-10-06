@@ -1,5 +1,6 @@
 import React from 'react'
-import './whyBuild.css'
+import '../CSS/whyBuild.css'
+import { pig,grader,bag,d1,d2,d3 } from '../images'
 const WhyBuild = () => {
   return (
     
@@ -10,17 +11,17 @@ const WhyBuild = () => {
     </div>
     <div className='parent' >
         <div className='free'>
-            <img src="https://www.resume.com/static/free-b34b0965cd813d4fd451b05362721c03.png" alt="" />
+            <img src={pig} alt="" />
             <h4>We’re actually free</h4>
             <p>No gimmicks, no freemium features,<br /> no joke. Get everything you need to <br /> build a professional resume that <br /> shows off your best qualities to help <br /> you land your next job</p>
         </div>  
         <div className='free'>
-            <img src="https://www.resume.com/static/data-driven-0c7fe1fd2c99ec8a6c79e340d1b87f62.png" alt="" />
+            <img src={grader} alt="" />
             <h4>Personally chosen</h4>
             <p>No gimmicks, no freemium features,<br /> no joke. Get everything you need to <br /> build a professional resume that <br /> shows off your best qualities to help <br /> you land your next job</p>
         </div>  
         <div className='free'>
-            <img src="https://www.resume.com/static/get-seen-038ae4c92876741f042f1a6861ae98de.png" alt="" />
+            <img src={bag} alt="" />
             <h4>Get hired</h4>
             <p>No gimmicks, no freemium features,<br /> no joke. Get everything you need to <br /> build a professional resume that <br /> shows off your best qualities to help <br /> you land your next job</p>
         </div>  
@@ -35,7 +36,7 @@ const WhyBuild = () => {
         <p>Our collection of resume templates features <br /> designs created by professional graphic artists. You <br />can switch between designs in a single click!</p>
       </div>
       <div>
-        <img width="450" height="400" src="https://www.livecareer.com/lcapp/uploads/2024/08/professional-fresh-designs.png"  />
+        <img width="450" height="400" src={d1}  />
       </div>
     </div>
     </div>
@@ -45,7 +46,7 @@ const WhyBuild = () => {
 
     <div className='d-flex'>
     <div>
-        <img width="450" height="400" src="https://www.livecareer.com/lcapp/uploads/2024/08/customize-details.png"  />
+        <img width="450" height="400" src={d2}  />
       </div>
       <div className='text'>
         <span style={{background:"#FFA019",display:"inline-block",height:"5px",width:"72px"}}></span>
@@ -68,7 +69,7 @@ const WhyBuild = () => {
         <p>We personally made  <br /> research for you to land a job!</p>
       </div>
       <div>
-        <img width="450" height="400" src="https://www.livecareer.com/lcapp/uploads/2024/08/created-by-career-experts.png"  />
+        <img width="450" height="400" src={d3}  />
       </div>
     </div>
     </div>

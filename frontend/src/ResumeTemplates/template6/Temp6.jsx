@@ -35,7 +35,7 @@ const Temp6 = ({ formData }) => {
                 <em>{job.startDate} - {job.endDate || 'Present'}</em>
               </p>
               <ul>
-  {job.responsibilities && job.responsibilities.split(/\s+/).map((resp, idx) => (
+  {job.responsibilities && job.responsibilities.split('\n').map((resp, idx) => (
     <li key={idx}>{resp}</li>
   ))}
 </ul>

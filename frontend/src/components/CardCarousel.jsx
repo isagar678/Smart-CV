@@ -1,5 +1,5 @@
 import React from 'react';
-import './cardCarousel.css'
+import '../CSS/cardCarousel.css'
 import MyCard from './MyCard';
 
 import temp1Image from '../ResumeTemplates/templateImages/temp1.png';

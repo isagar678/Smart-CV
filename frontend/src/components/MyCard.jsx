@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CustomButton from './CustomButton'
-import './card.css'
+import '../CSS/card.css'
+import { useSnapshot } from 'valtio';
+import {resumeState} from '../store';
 
 const MyCard = ({ title, image,rid , key}) => {
   const navigate=useNavigate();
+
+  
   const handleClick = () => {
+    resumeState.resumeID=rid;
     navigate(`/form/${rid}`);
   };
   return (
@@ -13,7 +18,8 @@ const MyCard = ({ title, image,rid , key}) => {
       <img src={image} className="card-img-top" alt={title} />
       <div className="card-body">
         
-        <CustomButton style={{ position: 'relative', }} handleClick={handleClick} key={key} rid={rid} text="USE"/>
+        <CustomButton style={{ position: 'relative', }} handleClick={handleClick}
+         key={key} rid={rid} text="USE"/>
       </div>
     </div>
   );
