@@ -1,6 +1,5 @@
 import React from 'react';
 import '../CSS/form.css';
-import html2pdf from 'html2pdf.js';
 import LiveResume from '../components/LiveResume';
 import { useNavigate } from 'react-router-dom';
 import { proxy, useSnapshot } from 'valtio';
@@ -15,22 +14,10 @@ import { formState,resumeState } from '../store';
 const Form = () => {
   const navigate = useNavigate();
   const snap = useSnapshot(formState); // Use the snapshot to track the state
-  const handleDownload = () => {
-    const element = document.querySelector('.resumes'); // Selects the element with 'resumes' class
-
-    if (element) {
-      html2pdf()
-        .from(element)
-        .set({
-          filename: 'resume.pdf', // File name for the downloaded PDF
-          jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
-        })
-        .save();
-    }
-  };
+  const rid=useSnapshot(resumeState);
 
   const handlePreview = () => {
-    navigate('/preview');
+    navigate(`/preview/${rid.resumeID}`);
   };
 
   const handleChange = (e) => {
@@ -159,6 +146,7 @@ const Form = () => {
 
           {/* Similar approach for Work History, Projects, and Education */}
           {/* ... */}
+          
 
           <button onClick={handlePreview} className="my-2">
             Preview

@@ -14,7 +14,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 const LiveResume = () => {
   const { rid } = useParams();
-  const navigate = useNavigate();
   const snap = useSnapshot(resumeState);
   const formData = useSnapshot(formState);
 
@@ -22,6 +21,7 @@ const LiveResume = () => {
   if (rid) {
     resumeState.resumeID = Number(rid);
   }
+  
 
   console.log('resumeID:', snap.resumeID);
 
@@ -35,16 +35,16 @@ const LiveResume = () => {
     7: Temp7,
     8: Temp8,
   };
-
   const Component = components[Number(snap.resumeID)];
 
   if (!Component) {
     
-    return <div>Error: Invalid resumeID</div>;
+    return <div>eroor invalid resume id</div>
   }
+  
 
   return (
-    <div>
+    <div className='resume-wrappers'>
       <Component formData={formData} />
     </div>
   );

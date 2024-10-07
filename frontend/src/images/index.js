@@ -6,4 +6,5 @@ import d1 from './d1.avif'
 import d2 from './d2.avif'
 import d3 from './d3.avif'
 import icon from './icon.avif'
-export { bag,grader,companylist,pig,d1,d2,d3,icon }
+import download from './downloading.png'
+export { download,bag,grader,companylist,pig,d1,d2,d3,icon }
