@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/home.css'
+import '../css/homer.css'
 import Banner from '../components/Banner'
 import { CardCarousel } from '../components/CardCarousel'
 import WhyBuild from '../components/WhyBuild'
