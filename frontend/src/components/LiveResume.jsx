@@ -10,7 +10,7 @@ import Temp7 from '../ResumeTemplates/template7/Temp7';
 import Temp8 from '../ResumeTemplates/template8/Temp8';
 import { useSnapshot } from 'valtio';
 import { resumeState, formState } from '../store';
-import { useNavigate, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 
 const LiveResume = () => {
   const { rid } = useParams();

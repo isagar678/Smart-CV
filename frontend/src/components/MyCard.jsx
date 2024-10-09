@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CustomButton from './CustomButton'
-import '../CSS/card.css'
-import { useSnapshot } from 'valtio';
+import '../css/card.css'
 import {resumeState} from '../store';
 
 const MyCard = ({ title, image,rid , key}) => {

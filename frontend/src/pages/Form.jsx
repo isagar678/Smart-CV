@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/form.css';
+import '../css/form.css';
 import LiveResume from '../components/LiveResume';
 import { useNavigate } from 'react-router-dom';
 import { proxy, useSnapshot } from 'valtio';

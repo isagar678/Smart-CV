@@ -1,6 +1,6 @@
 import React from 'react'
 import LiveResume from '../components/LiveResume'
-import '../CSS/preview.css'
+import '../css/preview.css'
 import { download } from '../images'
 import html2pdf from 'html2pdf.js';
 import { useNavigate } from 'react-router-dom';
