@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/banner.css'
+// import '../css/banner.css'
 import { companylist,icon} from '../images'
 import CustomButton from './CustomButton'
 const Banner = () => {

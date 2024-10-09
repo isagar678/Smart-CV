@@ -293,3 +293,386 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.whole {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.flexer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  gap: 20px;
+}
+
+.banner-image > img {
+  width: 100%;
+  max-width: 400px; /* Limits the size on larger screens */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.banner-text h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner-text h5 {
+  margin-bottom: 10px;
+}
+
+.banner-text {
+  flex: 1;
+}
+
+.container.a {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.a {
+  color: black;
+  font-size: 1rem;
+  font-family: Lexend, sans-serif;
+  line-height: 1.5;
+}
+
+.floating-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .flexer {
+      flex-direction: column; /* Stacks content vertically */
+      align-items: center;
+      text-align: center;
+  }
+
+  .banner-image > img {
+      margin: 0 auto;
+      max-width: 300px; /* Smaller image on mobile */
+  }
+
+  .banner-text h1 {
+      font-size: 2rem;
+  }
+
+  .banner-text h3 {
+      font-size: 1rem;
+  }
+
+  .container.a {
+      margin: 20px;
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text h1 {
+      font-size: 1.5rem;
+  }
+
+  .banner-text h3 {
+      font-size: 0.9rem;
+  }
+
+  .banner-image > img {
+      max-width: 250px;
+  }
+
+  .container.a {
+      margin: 10px;
+  }
+}
+.a {
+  color: black;
+  margin-top: 5%;
+  font-family: Lexend, sans-serif;
+  /* line-height: 1.5; */
+  text-align: center;
+  margin-left: 7%;
+}
+
+@media (max-width: 768px) {
+  .a {
+      font-size: 0.9rem;
+  }
+}
+         
+.button-class {
+            
+  background: linear-gradient(to right, #a97fc5, #cd4e63); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+}
+.button-image {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image scales proportionally to fit */
+  position: relative;
+}
+.card{
+  margin: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(237, 160, 160, 0.75);
+}
+/* General form container styling */
+.form-div {
+  display: flex;
+  padding: 2%;
+  gap: 20px; /* Space between form and LiveResume */
+  height: 100vh; /* Occupy the full height of the viewport */
+}
+
+/* Form container styling */
+form {
+  width: 50%; /* Adjust form width */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000000d8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable scrolling inside the form */
+  max-height: 100vh; /* Ensure form does not exceed viewport height */
+}
+
+/* LiveResume container styling */
+.resume-section {
+  width: 110%; /* Adjust LiveResume width */
+  padding: 20px;
+  padding-left: 60%;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable scrolling inside LiveResume */
+  max-height: 100vh; /* Ensure LiveResume does not exceed viewport height */
+}
+
+/* Styling for form labels */
+form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: white;
+}
+
+/* Input and textarea styling */
+form input[type="text"], form input[type="email"], form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+/* Hover and focus effects for inputs */
+form input[type="text"]:focus, form textarea:focus, form input[type="email"]:focus {
+  outline: 4px solid #a64dc4; /* Adjust the thickness (3px) and color */
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+form input[type="submit"]:hover {
+  background: linear-gradient(135deg, #ff758c, #ff5e95);
+}
+
+/* Textarea resizing for larger text fields */
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Input-container styling for dynamic fields like skills, certificates */
+.input-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.input-container input {
+  flex: 1; /* Make input take available space */
+  padding: 8px; /* Add some padding */
+  border: 1px solid #ccc; /* Input border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.input-container .remove {
+  margin-left: 5px; /* Space between input and button */
+  padding: 8px 12px; /* Padding for the button */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007bff; /* Button color */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.input-container .remove:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
+/* Button for adding new skills, certificates, work history */
+button.add-field {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button.add-field:hover {
+  background-color: #218838;
+}
+
+/* Skills, certificates, projects, education styling */
+.skills, .certificates, .projects, .education {
+  margin-bottom: 20px;
+}
+
+/* Work history section styling */
+.work-history {
+  margin-bottom: 20px;
+}
+
+.work-history input,
+.work-history textarea {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Button styling for add and remove actions */
+button.my-2 {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button.my-2:hover {
+  background-color: #218838;
+}
+
+button.remove {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button.remove:hover {
+  background-color: #c82333;
+}
+
+/* Media query to make the layout responsive */
+@media (max-width: 768px) {
+  .form-div {
+    flex-direction: column;
+  }
+
+  form, .live-resume {
+    width: 100%;
+  }
+}
+
+.form-section{
+  position: absolute;
+  left: -20%;
+  padding: 1%;
+  width: 88%;
+}
+.b1{
+  background: #ee9ca7;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #ffdde1,yellow, #ee9ca7);  Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffd6d6,rgb(255, 225, 223),rgb(244, 200, 149), #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100rem;
+  height: 100vh;
+  font-family: "Lexend", sans-serif;
+font-optical-sizing: auto;
+}
+.resume-wrapper {
+  display: flex; /* Use flexbox to center the content */
+  justify-content: center; /* Center the resume */
+   /* Auto margins to center */
+   /* margin-left: 25%; */
+   /* Set a maximum width for the resume wrapper */
+   page-break-inside: avoid;
+   
+}
+.download-btn {
+  position: fixed;
+  right: 50px; /* Adjust margin from left */
+  bottom: 20px; /* Optional: You can fix it at the bottom too */
+  padding: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.download-icon {
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+}
+
+
+.grand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 100px;
+
+}
+.great-grand{
+  margin-top: 150px;
+}
+.parent{
+  display: flex;
+  
+}
+.free {
+  margin:50px 120px 40px;
+}
+h6{
+text-wrap: wrap;
+}
+p{
+  color: black;
+}
+.text{
+  margin: 50px 90px 50px
+}
+.father{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

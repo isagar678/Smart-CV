@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/button.css'
+// import '../css/button.css'
 
 const CustomButton = ({style,text,handleClick}) => {
     

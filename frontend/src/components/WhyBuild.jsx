@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/whyBuild.css'
+// import '../css/whyBuild.css'
 import { pig,grader,bag,d1,d2,d3 } from '../images'
 const WhyBuild = () => {
   return (
