@@ -18,12 +18,14 @@ const WhyBuild = () => {
         <div className='free'>
             <img src={grader} alt="" />
             <h4>Personally chosen</h4>
-            <p>No gimmicks, no freemium features,<br /> no joke. Get everything you need to <br /> build a professional resume that <br /> shows off your best qualities to help <br /> you land your next job</p>
+            <p>Highlight your unique strengths <br /> with a tailored resume. Designed to <br /> showcase your skills and <br /> make you stand out to employers.
+
+</p>
         </div>  
         <div className='free'>
             <img src={bag} alt="" />
             <h4>Get hired</h4>
-            <p>No gimmicks, no freemium features,<br /> no joke. Get everything you need to <br /> build a professional resume that <br /> shows off your best qualities to help <br /> you land your next job</p>
+            <p>Land your dream job with a <br /> resume that impresses. <br /> Show off your best qualities <br /> and increase your chances <br /> of getting hired.</p>
         </div>  
     </div>
     <div className="father">
