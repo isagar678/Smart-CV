@@ -1,30 +1,114 @@
-
-.banner-image>img{
-    /* opacity: 0.5; */
-    top: 50px;
-    position:relative;
-    max-width: 70vh;
-    max-height: 70vh;
-    margin-right: 40px;
-    left: 0;
+.whole {
+    padding: 20px;
+    box-sizing: border-box;
 }
-.flexer{
+
+.flexer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-
-}
-.banner-text > h3{
-    margin-top: 70px;
-    margin-bottom: 40px;
-    
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    gap: 20px;
 }
 
-.a{
-    margin: 40px;
+.banner-image > img {
+    width: 100%;
+    max-width: 400px; /* Limits the size on larger screens */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.banner-text h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-text h5 {
+    margin-bottom: 10px;
+}
+
+.banner-text {
+    flex: 1;
+}
+
+.container.a {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.a {
     color: black;
-    font-size:20px;
+    font-size: 1rem;
     font-family: Lexend, sans-serif;
+    line-height: 1.5;
 }
 
+.floating-image {
+    max-width: 100%;
+    height: auto;
+}
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .flexer {
+        flex-direction: column; /* Stacks content vertically */
+        align-items: center;
+        text-align: center;
+    }
 
+    .banner-image > img {
+        margin: 0 auto;
+        max-width: 300px; /* Smaller image on mobile */
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text h3 {
+        font-size: 1rem;
+    }
+
+    .container.a {
+        margin: 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .banner-image > img {
+        max-width: 250px;
+    }
+
+    .container.a {
+        margin: 10px;
+    }
+}
+.a {
+    color: black;
+    margin-top: 5%;
+    font-family: Lexend, sans-serif;
+    /* line-height: 1.5; */
+    text-align: center;
+    margin-left: 7%;
+}
+
+@media (max-width: 768px) {
+    .a {
+        font-size: 0.9rem;
+    }
+}

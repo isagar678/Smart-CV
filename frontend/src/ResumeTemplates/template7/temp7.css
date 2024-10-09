@@ -1,10 +1,17 @@
 /* temp6.css */
+.temp{
+  position:relative; 
+  /* position: static; */
+  left: 5%;
+   /* margin-right: 270%;  */
+   width: 100%;
+}
 
 .containers {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     font-family: 'Arial', sans-serif;
-    margin: 40px auto;
+    /* margin: 40px auto; */
     width: 70%;
     border: 1px solid #e5e5e5;
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
@@ -13,7 +20,7 @@
   /* Left Sidebar for Personal Info */
   .left-sidebar {
     background-color: #f36f56;
-    width: 30%;
+    width: 35%;
     color: white;
     padding: 20px;
     text-align: left;

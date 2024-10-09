@@ -3,68 +3,80 @@ import './temp8.css';
 
 const Temp8 = ({ formData }) => {
   return (
-    <div className="resume-temp8-container">
-      {/* Left Sidebar */}
-      <div className="resume-temp8-left-sidebar">
-        <h1 className="resume-temp8-name">{formData.name}</h1>
-        <div className="resume-temp8-contact">
-          <p>{formData.email}</p>
-          <p>{formData.contactNo}</p>
-          <p>{formData.address}</p>
-        </div>
+    <div className="resume-hill container">
+      <div className="resume-hill__sidebar">
+        <h2 className="resume-hill__name">{formData.name}</h2>
+        <p className="resume-hill__contact">{formData.email}</p>
+        <p className="resume-hill__contact">{formData.contactNo}</p>
+        <p className="resume-hill__location">{formData.address}</p>
 
-        <h3 className="resume-temp8-section-title">Summary</h3>
-        <p>{formData.professionalSummary}</p>
+        {formData.professionalSummary && (
+          <div className="resume-hill__section">
+            <h4 className="resume-hill__section-title">Summary</h4>
+            <p>{formData.professionalSummary}</p>
+          </div>
+        )}
 
-        <h3 className="resume-temp8-section-title">Education</h3>
-        {formData.education.map((edu, index) => (
-          <p key={index}>{edu}</p>
-        ))}
+        {formData.education && formData.education.length > 0 && (
+          <div className="resume-hill__section">
+            <h4 className="resume-hill__section-title">Education</h4>
+            {formData.education.map((edu, index) => (
+              <p key={index}>{edu}</p>
+            ))}
+          </div>
+        )}
 
-        <h3 className="resume-temp8-section-title">Certificates</h3>
-        <ul className="resume-temp8-list">
-          {formData.certificates.map((certificate, index) => (
-            <li key={index}>{certificate}</li>
-          ))}
-        </ul>
+        {formData.certifications && formData.certifications.length > 0 && (
+          <div className="resume-hill__section">
+            <h4 className="resume-hill__section-title">Certificates</h4>
+            <ul>
+              {formData.certifications.map((cert, index) => (
+                <li key={index}>{cert}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
 
-      {/* Main Content */}
-      <div className="resume-temp8-main-content">
-        <h2 className="resume-temp8-main-header">Relevant Experience</h2>
-        {formData.workHistory.map((exp, index) => (
-          <div className="resume-temp8-section" key={index}>
-            <h4 className="resume-temp8-subheader">
-              {exp.position}, {exp.company}
-            </h4>
-            <p className="resume-temp8-description">
-              {exp.location} | {exp.startDate} - {exp.endDate || 'Present'}
-            </p>
-            <ul>
-  {exp.responsibilities && exp.responsibilities.split('\n').map((resp, idx) => (
-    <li key={idx}>{resp}</li>
-  ))}
-</ul>
-            <div className="resume-temp8-divider"></div>
+      <div className="resume-hill__main">
+        {formData.workHistory && formData.workHistory.length > 0 && (
+          <div className="resume-hill__section">
+            <h4 className="resume-hill__section-title">Relevant Experience</h4>
+            {formData.workHistory.map((job, index) => (
+              <div key={index} className="resume-hill__job">
+                <p><strong>{job.position}</strong>, {job.company}</p>
+                <p>{job.location} | {job.startDate} - {job.endDate || 'Present'}</p>
+                <ul>
+                  {job.responsibilities && job.responsibilities.split('\n').map((resp, idx) => (
+                    <li key={idx}>{resp}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
-        ))}
+        )}
 
-        <h2 className="resume-temp8-main-header">Projects</h2>
-        {formData.projects.map((project, index) => (
-          <div className="resume-temp8-section" key={index}>
+        {formData.projects && formData.projects.length > 0 && (
+          <div className="resume-hill__section">
+            <h4 className="resume-hill__section-title">Projects</h4>
             <ul>
-              <li>{project}</li>
+              {formData.projects.map((project, index) => (
+                <li key={index}>{project}</li>
+              ))}
             </ul>
-            <div className="resume-temp8-divider"></div>
           </div>
-        ))}
+        )}
 
-        <h2 className="resume-temp8-main-header">Skills</h2>
-        <ul className="resume-temp8-list">
-          {formData.skills.map((skill, index) => (
-            <li key={index}>{skill}</li>
-          ))}
-        </ul>
+        {formData.skills && formData.skills.length > 0 && (
+          <div className="resume-hill__section">
+            <h4 className="resume-hill__section-title">Skills</h4>
+            <ul>
+              {formData.skills.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );

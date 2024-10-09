@@ -1,9 +1,16 @@
 .resume-container1 {
   background-color: #f8f9fa;
   border-radius: 10px;
+  /* margin-right: 20%; */
+  position: relative;
+  /* right: 20%; */
+  /* margin-right: -10%   ; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.resumes{
+  /* margin: 0 auto; */
+  position:inherit;
+}
 /* Name and contact details */
 .resume-container1 .resume-name {
   font-family: 'Arial Black', sans-serif;

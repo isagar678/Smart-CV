@@ -2,7 +2,7 @@
     display: flex; /* Use flexbox to center the content */
     justify-content: center; /* Center the resume */
      /* Auto margins to center */
-     margin-left: 20%;
+     /* margin-left: 25%; */
      /* Set a maximum width for the resume wrapper */
      page-break-inside: avoid;
      

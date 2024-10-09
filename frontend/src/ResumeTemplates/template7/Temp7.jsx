@@ -3,6 +3,7 @@ import './temp7.css';
 
 const Temp7 = ({ formData }) => {
   return (
+    <div className='temp'>
     <div className="containers">
       {/* Left Sidebar */}
       <div className="left-sidebar">
@@ -24,7 +25,7 @@ const Temp7 = ({ formData }) => {
           <h3>Certifications</h3>
           <ul>
             {formData.certificates.map((certification, index) => (
-              <li style={{color:'black'}} key={index}>{certification}</li>
+              <li style={{color:'black'}} key={index}><p>{certification}</p></li>
             ))}
           </ul>
         </div>
@@ -78,6 +79,7 @@ const Temp7 = ({ formData }) => {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 };

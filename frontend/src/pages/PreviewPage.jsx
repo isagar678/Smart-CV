@@ -29,7 +29,7 @@ const PreviewPage = () => {
   const navigate=useNavigate();
   return (
     <>
-    <div  className="bounce-in-right  resume-wrapper">
+    <div contentEditable className="bounce-in-right  resume-wrapper">
       <LiveResume />
     </div>
     <CustomButton style={{
